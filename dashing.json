@@ -1,0 +1,140 @@
+{
+    "name": "Raku",
+    "package": "raku",
+    "index": "index.html",
+    "icon32x32": "images/Camelia.png",
+    "allowJS": true,
+    "ExternalURL": "https://docs.raku.org/",
+    "selectors": {
+        "h1.title": [
+            {
+            "requiretext": "^class X::",
+            "type": "Exception",
+            "regexp": "^class ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^class Exception",
+            "type": "Exception",
+            "regexp": "^class ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^class Failure",
+            "type": "Exception",
+            "regexp": "^class ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^class\\s",
+            "type": "Class",
+            "regexp": "^class ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^constant\\s",
+            "type": "Constant",
+            "regexp": "^constant ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^method\\s",
+            "type": "Method",
+            "regexp": "^method ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^enum\\s",
+            "type": "Enum",
+            "regexp": "^enum ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^infix\\s",
+            "type": "Operator",
+            "regexp": "^infix ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^prefix\\s",
+            "type": "Operator",
+            "regexp": "^prefix ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^postfix\\s",
+            "type": "Operator",
+            "regexp": "^postfix ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^postcircumfix\\s",
+            "type": "Operator",
+            "regexp": "^postcircumfix ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^routine\\s",
+            "type": "Subroutine",
+            "regexp": "^routine ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^sub\\s",
+            "type": "Subroutine",
+            "regexp": "^sub ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^trait\\s",
+            "type": "Trait",
+            "regexp": "^trait ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^variable\\s",
+            "type": "Variable",
+            "regexp": "^variable ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^Control\\s",
+            "type": "Command"
+        },
+            {
+            "requiretext": "^declarator\\s",
+            "type": "Define",
+            "regexp": "^declarator ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^module\\s",
+            "type": "Module",
+            "regexp": "^module ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^Phasers",
+            "type": "Command"
+        },
+            {
+            "requiretext": "^role\\s",
+            "type": "Interface",
+            "regexp": "^role ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^syntax\\s",
+            "type": "Notation",
+            "regexp": "^syntax ",
+            "replacement": ""
+        },
+            {
+            "requiretext": "^term\\s",
+            "type": "Builtin",
+            "regexp": "^term ",
+            "replacement": ""
+        }
+        ]
+    }
+}

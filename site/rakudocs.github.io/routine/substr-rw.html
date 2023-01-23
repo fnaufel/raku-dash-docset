@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>routine substr-rw</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
+
+<body class="pod">
+
+    <div id="___top"></div>
+
+    <div id="header" class="pretty-box green">
+
+        <a href="../index.html">
+            <img src="../images/Camelia.svg" alt="»ö«" id="logo" width="62" height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="substr-rw.html" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item " href="../language.html"> Language </a>
+                    <a class="menu-item " href="../type.html"> Types </a>
+                    <a class="menu-item selected darker-green" href="../routine.html"> Routines </a>
+                    <a class="menu-item " href="../programs.html"> Programs </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
+            </div>
+
+            <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
+                    <a class="menu-item" href="../routine.html"> All </a>
+                    <a class="menu-item" href="../routine-sub.html"> Sub </a>
+                    <a class="menu-item" href="../routine-method.html"> Method </a>
+                    <a class="menu-item" href="../routine-term.html"> Term </a>
+                    <a class="menu-item" href="../routine-operator.html"> Operator </a>
+                    <a class="menu-item" href="../routine-trait.html"> Trait </a>
+                    <a class="menu-item" href="../routine-submethod.html"> Submethod </a>
+            </div></div></div></div></div></div></div>
+
+        </div>
+    </div>
+
+    <div id="content" class="pretty-box yellow content_fragment">
+
+        <div align="right" style="display:none;">
+            <button title="Edit this page"  class="pencil" onclick="location=''">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+
+        <h1 class="title">routine substr-rw</h1>
+        <p class="subtitle"></p>
+
+        <nav class="indexgroup">
+<table id="TOC">
+<caption><h2 id="TOC_Title">Table of Contents</h2></caption>
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="substr-rw.html#class_Str">class Str</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="substr-rw.html#(Str)_method_substr-rw">(Str) method substr-rw</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="substr-rw.html#class_Cool">class Cool</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="substr-rw.html#(Cool)_routine_substr-rw">(Cool) routine substr-rw</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="substr-rw.html#class_Allomorph">class Allomorph</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="substr-rw.html#(Allomorph)_method_substr-rw">(Allomorph) method substr-rw</a></td></tr>
+
+</table>
+</nav>
+
+        <div class="pod-body ">
+            <p>Documentation for routine <code>substr-rw</code> assembled from the following types:</p>
+<h1 id="class_Str"><a class="u" href="substr-rw.html#___top" title="go to top of document">class Str</a></h1>
+<p>From <a href="../type/Str.html#method_substr-rw">Str</a></p>
+<h2 id="(Str)_method_substr-rw"><a href="../type/Str.html#method_substr-rw">(Str) method substr-rw</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>substr-rw</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>from</span></span></span><span>,&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>length</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="keyword operator generic raku"><span>*</span></span><span>)</span></span></div></pre><p>A version of <code>substr</code> that returns a <a href="../type/Proxy.html">Proxy</a> functioning as a writable reference to a part of a string variable. Its first argument, <code>$from</code> specifies the index in the string from which a substitution should occur, and its last argument, <code>$length</code> specifies how many characters are to be replaced. If not specified, <code>$length</code> defaults to the length of the string.</p>
+<p>For example, in its method form, if one wants to take the string <code>&quot;abc&quot;</code> and replace the second character (at index 1) with the letter <code>&quot;z&quot;</code>, then one does this:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>abc</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="routine name raku"><span>substr-rw</span></span><span>(</span><span class="constant numeric raku"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric raku"><span>1</span></span><span>)&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>z</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>say</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«azc␤»</span></span></span></div></pre><p>Note that new characters can be inserted as well:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>azc</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="routine name raku"><span>substr-rw</span></span><span>(</span><span class="constant numeric raku"><span>2</span></span><span>,&nbsp;</span><span class="constant numeric raku"><span>0</span></span><span>)&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>-Zorro-</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span>;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;insert&nbsp;new&nbsp;characters&nbsp;BEFORE&nbsp;the&nbsp;character&nbsp;at&nbsp;index&nbsp;2</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>say</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«az-Zorro-c␤»</span></span></span></div></pre><p><code>substr-rw</code> also has a function form, so the above examples can also be written like so:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>abc</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>substr-rw</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span>,&nbsp;</span><span class="constant numeric raku"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric raku"><span>1</span></span><span>)&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>z</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>say</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«azc␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>substr-rw</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span>,&nbsp;</span><span class="constant numeric raku"><span>2</span></span><span>,&nbsp;</span><span class="constant numeric raku"><span>0</span></span><span>)&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>-Zorro-</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>say</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«az-Zorro-c␤»</span></span></span></div></pre><p>It is also possible to alias the writable reference returned by <code>substr-rw</code> for repeated operations:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>A&nbsp;character&nbsp;in&nbsp;the&nbsp;&#39;Flintstones&#39;&nbsp;is:&nbsp;barney</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp raku"><span>/</span></span><span class="string regexp raku"><span>(barney)</span></span><span class="punctuation definition regexp raku"><span>/</span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>ref</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>:=</span></span><span>&nbsp;</span><span class="routine name raku"><span>substr-rw</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span>,&nbsp;</span><span class="keyword other special-method raku"><span>$0</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>from</span></span><span>,&nbsp;</span><span class="keyword other special-method raku"><span>$0</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="routine name raku"><span>to-$0</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>from</span></span><span>);</span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>say</span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«A&nbsp;character&nbsp;in&nbsp;the&nbsp;&#39;Flintstones&#39;&nbsp;is:&nbsp;barney␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>ref</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>fred</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>say</span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«A&nbsp;character&nbsp;in&nbsp;the&nbsp;&#39;Flintstones&#39;&nbsp;is:&nbsp;fred␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>ref</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>wilma</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>string</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>say</span></span><span>;</span></span></div><div class="line"><span class="source raku"><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«A&nbsp;character&nbsp;in&nbsp;the&nbsp;&#39;Flintstones&#39;&nbsp;is:&nbsp;wilma␤»</span></span></span></div></pre><h1 id="class_Cool"><a class="u" href="substr-rw.html#___top" title="go to top of document">class Cool</a></h1>
+<p>From <a href="../type/Cool.html#routine_substr-rw">Cool</a></p>
+<h2 id="(Cool)_routine_substr-rw"><a href="../type/Cool.html#routine_substr-rw">(Cool) routine substr-rw</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator multi raku"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>substr-rw</span></span><span class="keyword operator setbagmix raku"><span>(|)</span></span><span>&nbsp;</span><span class="storage modifier type constraints raku"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait raku"><span>rw</span></span></span></div><div class="line"><span class="source raku"><span class="storage type declarator multi raku"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type raku"><span>sub</span></span><span>&nbsp;</span><span class="entity name function raku"><span>substr-rw</span></span><span class="keyword operator setbagmix raku"><span>(|)</span></span><span>&nbsp;</span><span class="storage modifier type constraints raku"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait raku"><span>rw</span></span></span></div></pre><p>Coerces the invocant (or in the sub form, the first argument) to <a href="../type/Str.html">Str</a>, and calls <a href="../type/Str.html#method_substr-rw">Str.substr-rw</a> with the arguments.</p>
+<h1 id="class_Allomorph"><a class="u" href="substr-rw.html#___top" title="go to top of document">class Allomorph</a></h1>
+<p>From <a href="../type/Allomorph.html#method_substr-rw">Allomorph</a></p>
+<h2 id="(Allomorph)_method_substr-rw"><a href="../type/Allomorph.html#method_substr-rw">(Allomorph) method substr-rw</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>substr-rw</span></span><span>(</span><span class="routine name raku"><span>Allomorph</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>&nbsp;\</span><span class="routine name raku"><span>SELF</span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>start</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>0</span></span><span>,&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>want</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="support type raku"><span>Whatever</span></span><span>)</span></span></div></pre><p>Calls <a href="../type/Str.html#method_substr-rw"><code>Str.substr-rw</code></a> on the invocant&#39;s <code>Str</code> value.</p>
+
+        </div>
+    </div>
+
+    
+
+    <footer class="pretty-box yellow">
+        <p style="display:none;">
+            Generated from <a href="https://github.com/Raku/doc/edit/master/doc//">https://github.com/Raku/doc/edit/master/doc//</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/Raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="../js/app.js%3Fv=1"></script>
+    <script type="text/javascript" src="../js/search.js%3Fv=3"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>method match</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
+
+<body class="pod">
+
+    <div id="___top"></div>
+
+    <div id="header" class="pretty-box green">
+
+        <a href="../index.html">
+            <img src="../images/Camelia.svg" alt="»ö«" id="logo" width="62" height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="match.html" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item " href="../language.html"> Language </a>
+                    <a class="menu-item " href="../type.html"> Types </a>
+                    <a class="menu-item selected darker-green" href="../routine.html"> Routines </a>
+                    <a class="menu-item " href="../programs.html"> Programs </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
+            </div>
+
+            <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
+                    <a class="menu-item" href="../routine.html"> All </a>
+                    <a class="menu-item" href="../routine-sub.html"> Sub </a>
+                    <a class="menu-item" href="../routine-method.html"> Method </a>
+                    <a class="menu-item" href="../routine-term.html"> Term </a>
+                    <a class="menu-item" href="../routine-operator.html"> Operator </a>
+                    <a class="menu-item" href="../routine-trait.html"> Trait </a>
+                    <a class="menu-item" href="../routine-submethod.html"> Submethod </a>
+            </div></div></div></div></div></div></div>
+
+        </div>
+    </div>
+
+    <div id="content" class="pretty-box yellow content_fragment">
+
+        <div align="right" style="display:none;">
+            <button title="Edit this page"  class="pencil" onclick="location=''">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+
+        <h1 class="title">method match</h1>
+        <p class="subtitle"></p>
+
+        <nav class="indexgroup">
+<table id="TOC">
+<caption><h2 id="TOC_Title">Table of Contents</h2></caption>
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="match.html#class_Str">class Str</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="match.html#(Str)_method_match">(Str) method match</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="match.html#class_Cool">class Cool</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="match.html#(Cool)_method_match">(Cool) method match</a></td></tr>
+
+</table>
+</nav>
+
+        <div class="pod-body ">
+            <p>Documentation for method <code>match</code> assembled from the following types:</p>
+<h1 id="class_Str"><a class="u" href="match.html#___top" title="go to top of document">class Str</a></h1>
+<p>From <a href="../type/Str.html#method_match">Str</a></p>
+<h2 id="(Str)_method_match"><a href="../type/Str.html#method_match">(Str) method match</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>match</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>pat</span></span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>continue</span></span><span>(</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>c</span></span></span><span>),&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>pos</span></span><span>(</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>p</span></span></span><span>),&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>global</span></span><span>(</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>g</span></span></span><span>),&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>overlap</span></span><span>(</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>ov</span></span></span><span>),&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>exhaustive</span></span><span>(</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>ex</span></span></span><span>),&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>st</span></span><span>(</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>nd</span></span></span><span>),&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>rd</span></span><span>(</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>th</span></span></span><span>),&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>nth</span></span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>x</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Match</span></span><span>)</span></span></div></pre><p>Performs a match of the string against <code>$pat</code> and returns a <a href="../type/Match.html">Match</a> object if there is a successful match; it returns <code>(Any)</code> otherwise. Matches are stored in the <a href="../language/variables.html#index-entry-match_variable">default match variable <code>$/</code></a>. If <code>$pat</code> is not a <a href="../type/Regex.html">Regex</a> object, match will coerce the argument to a Str and then perform a literal match against <code>$pat</code>.</p>
+<p>A number of optional named parameters can be specified, which alter how the match is performed.</p>
+<ul><li><p>:continue</p>
+</li>
+</ul>
+<p>The <code>:continue</code> adverb takes as an argument the position where the regex should start to search. If no position is specified for <code>:c</code> it will default to 0 unless <code>$/</code> is set, in which case it defaults to <code>$/.to</code>.</p>
+<ul><li><p>:pos</p>
+</li>
+</ul>
+<p>Takes a position as an argument. Fails if regex cannot be matched from that position, unlike <code>:continue</code>.</p>
+<ul><li><p>:global</p>
+</li>
+</ul>
+<p>Instead of searching for just one match and returning a <code>Match</code> object, search for every non-overlapping match and return them in a <code>List</code>.</p>
+<ul><li><p>:overlap</p>
+</li>
+</ul>
+<p>Finds all matches including overlapping matches, but only returns one match from each starting position.</p>
+<ul><li><p>:exhaustive</p>
+</li>
+</ul>
+<p>Finds all possible matches of a regex, including overlapping matches and matches that start at the same position.</p>
+<ul><li><p>:st, :nd, :rd, :nth</p>
+</li>
+</ul>
+<p>Returns the nth match in the string. The argument can be a <a href="../type/Numeric.html">Numeric</a> or an <a href="../type/Iterable.html">Iterable</a> producing monotonically increasing numbers (that is, the next produced number must be larger than the previous one). The <a href="../type/Iterable.html">Iterable</a> will be lazily <a href="../language/glossary.html#index-entry-Reify">reified</a> and if non-monotonic sequence is encountered an exception will be thrown.</p>
+<p>If <a href="../type/Iterable.html">Iterable</a> argument is provided the return value and <code>$/</code> variable will be set to a possibly-empty <a href="../type/List.html">List</a> of <a href="../type/Match.html">Match</a> objects.</p>
+<ul><li><p>:x</p>
+</li>
+</ul>
+<p>Takes as an argument the number of matches to return, stopping once the specified number of matches has been reached. The value must be a <a href="../type/Numeric.html">Numeric</a> or a <a href="../type/Range.html">Range</a>; other values will cause <code>.match</code> to return a <a href="../type/Failure.html">Failure</a> containing <code>X::Str::Match::x</code> exception.</p>
+<p>Examples:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>properly</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>(</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>perl</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢perl｣␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>properly</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>(</span><span class="punctuation definition regexp raku"><span>/</span></span><span class="string regexp raku"><span>p</span><span class="keyword operator quantifiers regexp raku"><span>..</span><span>.</span></span></span><span class="punctuation definition regexp raku"><span>/</span></span><span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢prop｣␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>1&nbsp;2&nbsp;3</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>([</span><span class="constant numeric raku"><span>1</span></span><span>,</span><span class="constant numeric raku"><span>2</span></span><span>,</span><span class="constant numeric raku"><span>3</span></span><span>]);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢1&nbsp;2&nbsp;3｣␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>a1xa2</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>(</span><span class="punctuation definition regexp raku"><span>/</span></span><span class="string regexp raku"><span>a</span><span class="keyword operator quantifiers regexp raku"><span>.</span></span></span><span class="punctuation definition regexp raku"><span>/</span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>continue</span></span><span>(</span><span class="constant numeric raku"><span>2</span></span><span>));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢a2｣␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>abracadabra</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>(</span><span class="punctuation definition regexp raku"><span>/</span></span><span class="string regexp raku"><span>&nbsp;a&nbsp;</span><span class="keyword operator quantifiers regexp raku"><span>.</span><span>*</span></span><span>&nbsp;a&nbsp;</span></span><span class="punctuation definition regexp raku"><span>/</span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>exhaustive</span></span><span>);</span></span></div><div class="line"><span class="source raku"><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(｢abracadabra｣&nbsp;｢abracada｣&nbsp;｢abraca｣&nbsp;｢abra｣&nbsp;｢acadabra｣&nbsp;｢acada｣&nbsp;｢aca｣&nbsp;｢adabra｣&nbsp;｢ada｣&nbsp;｢abra｣)␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>several&nbsp;words&nbsp;here</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>(</span><span class="punctuation definition regexp raku"><span>/</span></span><span class="string regexp raku"><span class="constant character escape class regexp raku"><span>\w</span></span><span class="keyword operator quantifiers regexp raku"><span>+</span></span></span><span class="punctuation definition regexp raku"><span>/</span></span><span>,</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>global</span></span><span>);&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(｢several｣&nbsp;｢words｣&nbsp;｢here｣)␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>abcdef</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>(</span><span class="punctuation definition regexp raku"><span>/</span></span><span class="string regexp raku"><span class="keyword operator quantifiers regexp raku"><span>.</span><span>*</span></span></span><span class="punctuation definition regexp raku"><span>/</span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>pos</span></span><span>(</span><span class="constant numeric raku"><span>2</span></span><span>));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢cdef｣␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>foo[bar][baz]</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>(</span><span class="punctuation definition regexp raku"><span>/</span></span><span class="string regexp raku"><span class="keyword operator quantifiers regexp raku"><span>..</span></span></span><span class="punctuation definition regexp raku"><span>/</span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="constant numeric raku"><span>1</span></span><span>st);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢fo｣␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>foo[bar][baz]</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>(</span><span class="punctuation definition regexp raku"><span>/</span></span><span class="string regexp raku"><span class="keyword operator quantifiers regexp raku"><span>..</span></span></span><span class="punctuation definition regexp raku"><span>/</span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="constant numeric raku"><span>2</span></span><span>nd);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢o[｣␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>foo[bar][baz]</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>(</span><span class="punctuation definition regexp raku"><span>/</span></span><span class="string regexp raku"><span class="keyword operator quantifiers regexp raku"><span>..</span></span></span><span class="punctuation definition regexp raku"><span>/</span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="constant numeric raku"><span>3</span></span><span>rd);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢ba｣␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>foo[bar][baz]</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>(</span><span class="punctuation definition regexp raku"><span>/</span></span><span class="string regexp raku"><span class="keyword operator quantifiers regexp raku"><span>..</span></span></span><span class="punctuation definition regexp raku"><span>/</span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="constant numeric raku"><span>4</span></span><span>th);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢r]｣␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="string quoted double raku"><span class="punctuation definition string begin raku"><span>&quot;</span></span><span>foo[bar][baz]bada</span><span class="punctuation definition string end raku"><span>&quot;</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>match</span></span><span>(</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>ba</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="keyword operator word raku"><span>x</span></span><span>(</span><span class="constant numeric raku"><span>2</span></span><span>));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(｢ba｣&nbsp;｢ba｣)␤»</span><span>&nbsp;</span></span></span></div></pre><h1 id="class_Cool"><a class="u" href="match.html#___top" title="go to top of document">class Cool</a></h1>
+<p>From <a href="../type/Cool.html#method_match">Cool</a></p>
+<h2 id="(Cool)_method_match"><a href="../type/Cool.html#method_match">(Cool) method match</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>match</span></span><span>(</span><span class="support type raku"><span>Cool</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>target</span></span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>*</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>%</span></span><span class="variable other identifier raku"><span>adverbs</span></span></span><span>)</span></span></div></pre><p>Coerces the invocant to <a href="../type/Stringy.html">Stringy</a> and calls the method <a href="../type/Str.html#method_match">match</a> on it.</p>
+
+        </div>
+    </div>
+
+    
+
+    <footer class="pretty-box yellow">
+        <p style="display:none;">
+            Generated from <a href="https://github.com/Raku/doc/edit/master/doc//">https://github.com/Raku/doc/edit/master/doc//</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/Raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="../js/app.js%3Fv=1"></script>
+    <script type="text/javascript" src="../js/search.js%3Fv=3"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Filename extensions</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
+
+<body class="pod">
+
+    <div id="___top"></div>
+
+    <div id="header" class="pretty-box green">
+
+        <a href="../index.html">
+            <img src="../images/Camelia.svg" alt="»ö«" id="logo" width="62" height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="filename-extensions.html" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item selected darker-green" href="../language.html"> Language </a>
+                    <a class="menu-item " href="../type.html"> Types </a>
+                    <a class="menu-item " href="../routine.html"> Routines </a>
+                    <a class="menu-item " href="../programs.html"> Programs </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
+            </div>
+
+            
+            
+
+        </div>
+    </div>
+
+    <div id="content" class="pretty-box yellow content_fragment">
+
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/edit/master/doc//Language/filename-extensions.pod6'">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+
+        <h1 class="title">Filename extensions</h1>
+        <p class="subtitle">The extensions recommended for files with Raku content.</p>
+
+        <nav class="indexgroup">
+<table id="TOC">
+<caption><h2 id="TOC_Title">Table of Contents</h2></caption>
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="filename-extensions.html#Introduction">Introduction</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="filename-extensions.html#History_and_extensions">History and extensions</a></td></tr>
+
+</table>
+</nav>
+
+        <div class="pod-body ">
+            <table class="pod-table">
+<thead><tr>
+<th>File contents</th> <th>Extensions recommended or used at one time</th> <th>Current recommendation</th>
+</tr></thead>
+<tbody>
+<tr> <td>B&lt;Language files&gt;</td> <td></td> <td></td> </tr> <tr> <td>Raku script</td> <td>.pl, .p6</td> <td>.raku</td> </tr> <tr> <td>Raku module</td> <td>.pm, .pm6</td> <td>.rakumod</td> </tr> <tr> <td>Raku documentation</td> <td>.pm, pm6, pod, pod6</td> <td>.rakudoc</td> </tr> <tr> <td>Test files in raku</td> <td>.t</td> <td>.rakutest</td> </tr> <tr> <td>Not Quite Perl or NQP</td> <td></td> <td>.nqp</td> </tr> <tr> <td>B&lt;Module specific files&gt;</td> <td></td> <td></td> </tr> <tr> <td>Cro templates</td> <td></td> <td>.crotmp</td> </tr>
+</tbody>
+</table><h1 id="Introduction"><a class="u" href="filename-extensions.html#___top" title="go to top of document">Introduction</a></h1>
+<p>A filename extension is defined, at least for this page, as the remaining letters after and including the final &#39;.&#39;. A filename without a &#39;.&#39; in the filename does not have a filename extension.</p>
+<p>Filename extensions can be used to associate behavior with the file content, such as opening a specialized reader or editor, running a program with the file content as input, etc. On some operating systems, this is almost the required behavior. Even when it is not required by the operating system, filename extensions provide a useful mnemonic, or reminder, about the contents of the file.</p>
+<p>Early filesystems, the part of the operating system handling filenames, constrained filename extensions to three characters after the &#39;.&#39;. This is no longer a constraint.</p>
+<h1 id="History_and_extensions"><a class="u" href="filename-extensions.html#___top" title="go to top of document">History and extensions</a></h1>
+<p>The Raku language was for many years known as Perl&nbsp;6, and filename extensions were adopted accordingly. Consequently, there is a best current practice and a previous best practice. The table at the top is an attempt to list all the filename extensions, starting with the earliest on the left.</p>
+<p>The most recent best practice is shown in the last column.</p>
+<p>Some modules will become widely used, and will have filename extensions associated with them.</p>
+<p>A module developer / maintainer may add to the table and create a PR with the change in the same way as making other changes to the documentation.</p>
+
+        </div>
+    </div>
+
+    
+
+    <footer class="pretty-box yellow">
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/doc/edit/master/doc//Language/filename-extensions.pod6">https://github.com/Raku/doc/edit/master/doc//Language/filename-extensions.pod6</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/Raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="../js/app.js%3Fv=1"></script>
+    <script type="text/javascript" src="../js/search.js%3Fv=3"></script>
+</body>
+</html>

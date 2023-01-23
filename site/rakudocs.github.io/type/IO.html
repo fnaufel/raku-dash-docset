@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>role IO</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
+
+<body class="pod">
+
+    <div id="___top"></div>
+
+    <div id="header" class="pretty-box green">
+
+        <a href="../index.html">
+            <img src="../images/Camelia.svg" alt="»ö«" id="logo" width="62" height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="IO.html" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item " href="../language.html"> Language </a>
+                    <a class="menu-item selected darker-green" href="../type.html"> Types </a>
+                    <a class="menu-item " href="../routine.html"> Routines </a>
+                    <a class="menu-item " href="../programs.html"> Programs </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
+            </div>
+
+            <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
+                    <a class="menu-item" href="../type.html"> All </a>
+                    <a class="menu-item" href="../type-basic.html"> Basic </a>
+                    <a class="menu-item" href="../type-composite.html"> Composite </a>
+                    <a class="menu-item" href="../type-domain-specific.html"> Domain-specific </a>
+                    <a class="menu-item" href="../type-exception.html"> Exceptions </a>
+            </div></div></div></div></div>
+
+        </div>
+    </div>
+
+    <div id="content" class="pretty-box yellow content_fragment">
+
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/edit/master/doc//Type/IO.pod6'">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+
+        <h1 class="title">role IO</h1>
+        <p class="subtitle">Input/output related routines</p>
+
+        <nav class="indexgroup">
+<table id="TOC">
+<caption><h2 id="TOC_Title">Table of Contents</h2></caption>
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="IO.html#Type_Graph">Type Graph</a></td></tr>
+
+</table>
+</nav>
+
+        <div class="pod-body ">
+            <p>The role provides no methods, but exists so that <code>IO()</code> coercers, which coerce to <a href="./IO::Path.html">IO::Path</a>, correctly type-check the resultant value. The role is implemented by <a href="./IO::Path.html">IO::Path</a> and <a href="./IO::Special.html">IO::Special</a>.</p>
+<p>See also the related classes <a href="./IO::Handle.html">IO::Handle</a> and <a href="./IO::Path.html">IO::Path</a>.</p>
+<h1 id="Type_Graph"><a class="u" href="IO.html#___top" title="go to top of document">Type Graph</a></h1>
+<figure>
+  <figcaption>Type relations for <code>IO</code></figcaption>
+  <svg width="632pt" height="332pt"
+ viewBox="0.00 0.00 631.89 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
+<title>perl6&#45;type&#45;graph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 627.888,-328 627.888,4 -4,4"/>
+<!-- IO -->
+<g id="node1" class="node"><title>IO</title>
+<g id="a_node1"><a xlink:href="/type/IO" xlink:title="IO">
+<ellipse fill="none" stroke="#6666ff" cx="236.644" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="236.644" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">IO</text>
+</a>
+</g>
+</g>
+<!-- Mu -->
+<g id="node2" class="node"><title>Mu</title>
+<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="245.644" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="245.644" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node3" class="node"><title>Any</title>
+<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="245.644" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="245.644" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M245.644,-252.303C245.644,-260.017 245.644,-269.288 245.644,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="242.144,-277.896 245.644,-287.896 249.144,-277.896 242.144,-277.896"/>
+</g>
+<!-- IO::Special -->
+<g id="node4" class="node"><title>IO::Special</title>
+<g id="a_node4"><a xlink:href="/type/IO::Special" xlink:title="IO::Special">
+<ellipse fill="none" stroke="#000000" cx="184.644" cy="-90" rx="53.8905" ry="18"/>
+<text text-anchor="middle" x="184.644" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Special</text>
+</a>
+</g>
+</g>
+<!-- IO::Special&#45;&gt;IO -->
+<g id="edge9" class="edge"><title>IO::Special&#45;&gt;IO</title>
+<path fill="none" stroke="#6666ff" d="M196.967,-107.589C203.564,-116.47 211.804,-127.561 219.062,-137.332"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="216.349,-139.549 225.122,-145.489 221.968,-135.375 216.349,-139.549"/>
+</g>
+<!-- IO::Special&#45;&gt;Any -->
+<g id="edge2" class="edge"><title>IO::Special&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M187.729,-108.16C192.379,-134.022 200.644,-180 200.644,-180 200.644,-180 214.114,-195.865 226.315,-210.235"/>
+<polygon fill="#000000" stroke="#000000" points="223.729,-212.596 232.869,-217.954 229.065,-208.066 223.729,-212.596"/>
+</g>
+<!-- Cool -->
+<g id="node5" class="node"><title>Cool</title>
+<g id="a_node5"><a xlink:href="/type/Cool" xlink:title="Cool">
+<ellipse fill="none" stroke="#000000" cx="310.644" cy="-162" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="310.644" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
+</a>
+</g>
+</g>
+<!-- Cool&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>Cool&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M296.859,-177.845C287.983,-187.404 276.281,-200.006 266.304,-210.751"/>
+<polygon fill="#000000" stroke="#000000" points="263.649,-208.467 259.409,-218.176 268.778,-213.23 263.649,-208.467"/>
+</g>
+<!-- IO::Path -->
+<g id="node6" class="node"><title>IO::Path</title>
+<g id="a_node6"><a xlink:href="/type/IO::Path" xlink:title="IO::Path">
+<ellipse fill="none" stroke="#000000" cx="306.644" cy="-90" rx="43.5923" ry="18"/>
+<text text-anchor="middle" x="306.644" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path</text>
+</a>
+</g>
+</g>
+<!-- IO::Path&#45;&gt;IO -->
+<g id="edge10" class="edge"><title>IO::Path&#45;&gt;IO</title>
+<path fill="none" stroke="#6666ff" d="M290.76,-106.884C281.152,-116.492 268.772,-128.872 258.278,-139.366"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="255.633,-137.061 251.037,-146.607 260.583,-142.011 255.633,-137.061"/>
+</g>
+<!-- IO::Path&#45;&gt;Cool -->
+<g id="edge4" class="edge"><title>IO::Path&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M307.633,-108.303C308.074,-116.017 308.603,-125.288 309.095,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="305.602,-134.112 309.667,-143.896 312.59,-133.712 305.602,-134.112"/>
+</g>
+<!-- IO::Path::Unix -->
+<g id="node7" class="node"><title>IO::Path::Unix</title>
+<g id="a_node7"><a xlink:href="/type/IO::Path::Unix" xlink:title="IO::Path::Unix">
+<ellipse fill="none" stroke="#000000" cx="65.6442" cy="-18" rx="65.7887" ry="18"/>
+<text text-anchor="middle" x="65.6442" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::Unix</text>
+</a>
+</g>
+</g>
+<!-- IO::Path::Unix&#45;&gt;IO::Path -->
+<g id="edge5" class="edge"><title>IO::Path::Unix&#45;&gt;IO::Path</title>
+<path fill="none" stroke="#000000" d="M109.008,-31.5954C152.258,-44.1575 218.378,-63.3625 262.054,-76.0484"/>
+<polygon fill="#000000" stroke="#000000" points="261.251,-79.4597 271.83,-78.888 263.203,-72.7375 261.251,-79.4597"/>
+</g>
+<!-- IO::Path::Win32 -->
+<g id="node8" class="node"><title>IO::Path::Win32</title>
+<g id="a_node8"><a xlink:href="/type/IO::Path::Win32" xlink:title="IO::Path::Win32">
+<ellipse fill="none" stroke="#000000" cx="222.644" cy="-18" rx="73.387" ry="18"/>
+<text text-anchor="middle" x="222.644" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::Win32</text>
+</a>
+</g>
+</g>
+<!-- IO::Path::Win32&#45;&gt;IO::Path -->
+<g id="edge6" class="edge"><title>IO::Path::Win32&#45;&gt;IO::Path</title>
+<path fill="none" stroke="#000000" d="M242.551,-35.589C253.746,-44.9181 267.868,-56.6869 280.006,-66.8014"/>
+<polygon fill="#000000" stroke="#000000" points="278.108,-69.7761 288.031,-73.4892 282.59,-64.3985 278.108,-69.7761"/>
+</g>
+<!-- IO::Path::Cygwin -->
+<g id="node9" class="node"><title>IO::Path::Cygwin</title>
+<g id="a_node9"><a xlink:href="/type/IO::Path::Cygwin" xlink:title="IO::Path::Cygwin">
+<ellipse fill="none" stroke="#000000" cx="391.644" cy="-18" rx="77.1866" ry="18"/>
+<text text-anchor="middle" x="391.644" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::Cygwin</text>
+</a>
+</g>
+</g>
+<!-- IO::Path::Cygwin&#45;&gt;IO::Path -->
+<g id="edge7" class="edge"><title>IO::Path::Cygwin&#45;&gt;IO::Path</title>
+<path fill="none" stroke="#000000" d="M371.5,-35.589C360.063,-45.0079 345.606,-56.9135 333.246,-67.0927"/>
+<polygon fill="#000000" stroke="#000000" points="330.973,-64.4303 325.479,-73.4892 335.423,-69.8338 330.973,-64.4303"/>
+</g>
+<!-- IO::Path::QNX -->
+<g id="node10" class="node"><title>IO::Path::QNX</title>
+<g id="a_node10"><a xlink:href="/type/IO::Path::QNX" xlink:title="IO::Path::QNX">
+<ellipse fill="none" stroke="#000000" cx="555.644" cy="-18" rx="68.4888" ry="18"/>
+<text text-anchor="middle" x="555.644" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::QNX</text>
+</a>
+</g>
+</g>
+<!-- IO::Path::QNX&#45;&gt;IO::Path -->
+<g id="edge8" class="edge"><title>IO::Path::QNX&#45;&gt;IO::Path</title>
+<path fill="none" stroke="#000000" d="M510.84,-31.5954C465.801,-44.2571 396.755,-63.6676 351.646,-76.349"/>
+<polygon fill="#000000" stroke="#000000" points="350.522,-73.0292 341.842,-79.105 352.416,-79.768 350.522,-73.0292"/>
+</g>
+</g>
+</svg>
+
+  <p class="fallback">
+    <a
+      rel="alternate"
+      href="../images/type-graph-IO.svg"
+      type="image/svg+xml"
+      >Expand above chart</a
+    >
+  </p>
+</figure>
+
+        </div>
+    </div>
+
+    
+
+    <footer class="pretty-box yellow">
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/doc/edit/master/doc//Type/IO.pod6">https://github.com/Raku/doc/edit/master/doc//Type/IO.pod6</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/Raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="../js/app.js%3Fv=1"></script>
+    <script type="text/javascript" src="../js/search.js%3Fv=3"></script>
+</body>
+</html>
